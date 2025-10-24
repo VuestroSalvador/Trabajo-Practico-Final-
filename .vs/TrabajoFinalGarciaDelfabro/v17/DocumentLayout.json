@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC-1\\source\\repos\\TrabajoFinalGarciaDelfabro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\pc-1\\source\\repos\\trabajofinalgarciadelfabro\\trabajofinalgarciadelfabro\\producto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\producto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\pc-1\\source\\repos\\trabajofinalgarciadelfabro\\trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\pc-1\\source\\repos\\trabajofinalgarciadelfabro\\trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "producto.vb",
+              "DocumentMoniker": "C:\\Users\\PC-1\\source\\repos\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro\\producto.vb",
+              "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\producto.vb",
+              "ToolTip": "C:\\Users\\PC-1\\source\\repos\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro\\producto.vb",
+              "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\producto.vb",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-24T00:33:10.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\PC-1\\source\\repos\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro\\Form1.vb",
+              "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\Form1.vb",
+              "ToolTip": "C:\\Users\\PC-1\\source\\repos\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro\\Form1.vb",
+              "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\Form1.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-24T00:24:43.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC-1\\source\\repos\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro\\Form1.vb",
+              "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\Form1.vb",
+              "ToolTip": "C:\\Users\\PC-1\\source\\repos\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro\\Form1.vb [Dise\u00F1o]",
+              "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\Form1.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-24T00:23:51.695Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
