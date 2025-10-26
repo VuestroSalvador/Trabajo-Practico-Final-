@@ -1,5 +1,18 @@
-﻿Public Class Form1
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Imports MySql.Data.MySqlClient
+Public Class Form1
 
+    Private Sub BtnFormClientes_Click(sender As Object, e As EventArgs) Handles BtnFormClientes.Click
+        Me.Hide()
+        FormClientes.Show()
+    End Sub
+
+    Private Sub BtnFormProductos_Click(sender As Object, e As EventArgs) Handles BtnFormProductos.Click
+        Me.Hide()
+        FormProductos.Show()
+    End Sub
+
+    Private Sub BtnFormVentas_Click(sender As Object, e As EventArgs) Handles BtnFormVentas.Click
+        Me.Hide()
+        FormVentas.Show()
     End Sub
 End Class
