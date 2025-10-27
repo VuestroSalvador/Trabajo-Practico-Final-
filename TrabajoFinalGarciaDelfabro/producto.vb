@@ -1,8 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
-
 Public Class producto
-    Dim conexion As New MySqlConnection("server=localhost;port=3306;user id=root;password=;database=ventas_tpfinal")
-    Dim comando As MySqlCommand
+    Inherits BaseDeDatos
 
     Private _precio As Integer
     Private _nombre, _categoria As String
@@ -58,20 +56,21 @@ Public Class producto
 
     Public Function cargarproductos()
         Try
-            conexion.Open()
+            abrirconexion()
             Dim consulta As String = "SELECT * FROM productos"
             Dim adaptador As New MySqlDataAdapter(consulta, conexion)
             Dim tabla As New DataTable()
             adaptador.Fill(tabla)
             Return tabla
         Catch ex As Exception
+            MessageBox.Show("ERROR:" & ex.Message)
         Finally
-            conexion.Close()
+            cerrarconexion()
         End Try
     End Function
     Public Function agregarproducto(id As Integer, nombre As String, precio As Integer, categoria As String)
         Try
-            conexion.Open()
+            abrirconexion()
             Dim consulta As String = "INSERT INTO productos (ID_Producto,Nombre,Precio,Categoria) VALUES (@id,@nombre,@precio,@categoria)"
             comando = New MySqlCommand(consulta, conexion)
             comando.Parameters.AddWithValue("@id", id)
@@ -84,13 +83,13 @@ Public Class producto
         Catch ex As Exception
             MessageBox.Show("ERROR:" & ex.Message)
         Finally
-            conexion.Close()
+            cerrarconexion()
         End Try
     End Function
 
     Public Function eliminar(id As Integer)
         Try
-            conexion.Open()
+            abrirconexion()
             Dim consulta As String = "DELETE FROM productos WHERE ID_Producto=@ID_Producto"
             comando = New MySqlCommand(consulta, conexion)
             comando.Parameters.AddWithValue("@ID_Producto", id)
@@ -100,13 +99,13 @@ Public Class producto
         Catch ex As Exception
             MessageBox.Show("ERROR:" & ex.Message)
         Finally
-            conexion.Close()
+            cerrarconexion()
         End Try
     End Function
 
     Public Function actualizar(id, nombre, precio, categoria)
         Try
-            conexion.Open()
+            abrirconexion()
             Dim consulta As String = "UPDATE productos SET Nombre=@nombre, Precio=@precio, Categoria=@categoria WHERE ID_Producto=@idseleccion"
             comando = New MySqlCommand(consulta, conexion)
             comando.Parameters.AddWithValue("@idseleccion", id)
@@ -119,14 +118,14 @@ Public Class producto
         Catch ex As Exception
             MsgBox("ERROR:" & ex.Message)
         Finally
-            conexion.Close()
+            cerrarconexion()
         End Try
     End Function
 
     Public Function buscar(nombre, categoria, variablebuscar)
         If nombre = variablebuscar Then
             Try
-                conexion.Open()
+                abrirconexion()
                 Dim consulta As String = "SELECT * FROM productos WHERE Nombre LIKE @nombreBD"
                 comando = New MySqlCommand(consulta, conexion)
                 comando.Parameters.AddWithValue("@nombreBD", "%" & nombre & "%")
@@ -137,12 +136,12 @@ Public Class producto
             Catch ex As Exception
                 MsgBox("ERROR:" & ex.Message)
             Finally
-                conexion.Close()
+                cerrarconexion()
             End Try
         End If
         If categoria = variablebuscar Then
             Try
-                conexion.Open()
+                abrirconexion()
                 Dim consulta As String = "SELECT * FROM productos WHERE Categoria LIKE @categoriaBD"
                 comando = New MySqlCommand(consulta, conexion)
                 comando.Parameters.AddWithValue("@categoriaBD", "%" & categoria & "%")
@@ -153,7 +152,7 @@ Public Class producto
             Catch ex As Exception
                 MsgBox("ERROR:" & ex.Message)
             Finally
-                conexion.Close()
+                cerrarconexion()
             End Try
         End If
 
