@@ -2,26 +2,12 @@
 
 Public Class FormProductos
 
-    Dim conexion As New MySqlConnection("server=localhost;port=3306;user id=root;password=;database=ventas_tpfinal")
+    Dim conexion As New MySqlConnection("server=localhost;port=3000;user id=root;password=;database=ventas_tpfinal")
     Dim comando As MySqlCommand
     Private Sub FormProductos_load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CargarProductos()
-
-    End Sub
-    Private Sub CargarProductos()
-        Try
-            conexion.Open()
-            Dim consulta As String = "SELECT * FROM productos"
-            Dim adaptador As New MySqlDataAdapter(consulta, conexion)
-            Dim tabla As New DataTable()
-            adaptador.Fill(tabla)
-            DtGrdViewPRODUCTOS.DataSource = tabla
-            DtGrdViewPRODUCTOS.Columns("ID_Producto").ReadOnly = True
-        Catch ex As Exception
-            MsgBox("Error al cargar los productos: " & ex.Message)
-        Finally
-            conexion.Close()
-        End Try
+        Dim producto1 As New producto(0, "a", 1, "a")
+        Dim valortabla As DataTable = producto1.cargarproductos()
+        DtGrdViewPRODUCTOS.DataSource = valortabla
     End Sub
     Private Sub BtnAgregarProducto_Click(sender As Object, e As EventArgs) Handles BtnAgregarProducto.Click
         Dim id As Integer = 0
@@ -31,7 +17,8 @@ Public Class FormProductos
         Try
             Dim producto1 As New producto(id, nombre, precio, categoria)
             producto1.agregarproducto(id, nombre, precio, categoria)
-            CargarProductos()
+            Dim valortabla As DataTable = producto1.cargarproductos()
+            DtGrdViewPRODUCTOS.DataSource = valortabla
         Catch ex As Exception
             MsgBox("Error al agregar el producto: " & ex.Message)
         End Try
@@ -46,7 +33,8 @@ Public Class FormProductos
             idseleccionado = Convert.ToInt32(TxtBxIdProducto.Text)
             Dim producto1 As New producto(idseleccionado, "a", 1, "a")
             producto1.eliminar(idseleccionado)
-            CargarProductos()
+            Dim valortabla As DataTable = producto1.cargarproductos()
+            DtGrdViewPRODUCTOS.DataSource = valortabla
         End If
 
     End Sub
@@ -60,7 +48,8 @@ Public Class FormProductos
             Dim categoriam As String = DtGrdViewPRODUCTOS.CurrentRow.Cells("Categoria").Value
             Dim producto1 As New producto(idseleccionado, nombrem, preciom, categoriam)
             producto1.actualizar(idseleccionado, nombrem, preciom, categoriam)
-            CargarProductos()
+            Dim valortabla As DataTable = producto1.cargarproductos()
+            DtGrdViewPRODUCTOS.DataSource = valortabla
         Catch ex As Exception
             MsgBox("Error al agregar el producto: " & ex.Message)
         End Try
