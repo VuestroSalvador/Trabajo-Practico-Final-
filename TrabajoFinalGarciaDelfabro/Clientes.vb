@@ -1,4 +1,7 @@
-﻿Public Class Clientes
+﻿Imports MySql.Data.MySqlClient
+
+Public Class Clientes
+    Inherits BaseDeDatos
 
     Private _nombre, _telefono, _correo As String
     Private ReadOnly _id As Integer
@@ -53,4 +56,124 @@
         Me.correo = correo
     End Sub
 
+    Public Function cargar()
+        Try
+            abrirconexion()
+            Dim consulta As String = "SELECT * FROM clientes"
+            Dim adaptador As New MySqlDataAdapter(consulta, conexion)
+            Dim tabla As New DataTable()
+            adaptador.Fill(tabla)
+            Return tabla
+        Catch ex As Exception
+            MessageBox.Show("ERROR:" & ex.Message)
+        Finally
+            cerrarconexion()
+        End Try
+    End Function
+
+    Public Function agregar(id As Integer, nombre As String, telefono As String, correo As String)
+        Try
+            abrirconexion()
+            Dim consulta As String = "INSERT INTO clientes (ID_Clientes,Cliente,Telefono,Correo) VALUES (@id,@nombre,@telefono,@correo)"
+            comando = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@id", id)
+            comando.Parameters.AddWithValue("@nombre", nombre)
+            comando.Parameters.AddWithValue("@telefono", telefono)
+            comando.Parameters.AddWithValue("@correo", correo)
+            comando.ExecuteNonQuery()
+            MessageBox.Show("Cliente Agregado")
+            cargar()
+        Catch ex As Exception
+            MessageBox.Show("ERROR:" & ex.Message)
+        Finally
+            cerrarconexion()
+        End Try
+    End Function
+
+    Public Function eliminar(id As Integer)
+        Try
+            abrirconexion()
+            Dim consulta As String = "DELETE FROM clientes WHERE ID_Clientes=@ID_Clientes"
+            comando = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@ID_Clientes", id)
+            comando.ExecuteNonQuery()
+            MessageBox.Show("Cliente eliminado")
+
+        Catch ex As Exception
+            MessageBox.Show("ERROR:" & ex.Message)
+        Finally
+            cerrarconexion()
+        End Try
+    End Function
+
+    Public Function actualizar(id, nombre, telefono, correo)
+        Try
+            abrirconexion()
+            Dim consulta As String = "UPDATE clientes SET Cliente=@nombre, Telefono=@telefono, Correo=@correo WHERE ID_Clientes=@idseleccion"
+            comando = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@idseleccion", id)
+            comando.Parameters.AddWithValue("@nombre", nombre)
+            comando.Parameters.AddWithValue("@telefono", telefono)
+            comando.Parameters.AddWithValue("@correo", correo)
+            comando.ExecuteNonQuery()
+            MsgBox("Producto Modificado")
+
+        Catch ex As Exception
+            MsgBox("ERROR:" & ex.Message)
+        Finally
+            cerrarconexion()
+        End Try
+    End Function
+
+    Public Function buscar(nombre, telefono, correo, variablebuscar)
+        If nombre = variablebuscar Then
+            Try
+                abrirconexion()
+                Dim consulta As String = "SELECT * FROM clientes WHERE Cliente LIKE @nombreBD"
+                comando = New MySqlCommand(consulta, conexion)
+                comando.Parameters.AddWithValue("@nombreBD", "%" & nombre & "%")
+                Dim adaptador As New MySqlDataAdapter(comando)
+                Dim tabla As New DataTable()
+                adaptador.Fill(tabla)
+                Return tabla
+            Catch ex As Exception
+                MsgBox("ERROR:" & ex.Message)
+            Finally
+                cerrarconexion()
+            End Try
+        End If
+        If correo = variablebuscar Then
+            Try
+                abrirconexion()
+                Dim consulta As String = "SELECT * FROM clientes WHERE Correo LIKE @correoBD"
+                comando = New MySqlCommand(consulta, conexion)
+                comando.Parameters.AddWithValue("@correoBD", "%" & correo & "%")
+                Dim adaptador As New MySqlDataAdapter(comando)
+                Dim tabla As New DataTable()
+                adaptador.Fill(tabla)
+                Return tabla
+            Catch ex As Exception
+                MsgBox("ERROR:" & ex.Message)
+            Finally
+                cerrarconexion()
+            End Try
+        End If
+        If telefono = variablebuscar Then
+            Try
+                abrirconexion()
+                Dim consulta As String = "SELECT * FROM clientes WHERE Telefono LIKE @telefonoBD"
+                comando = New MySqlCommand(consulta, conexion)
+                comando.Parameters.AddWithValue("@telefonoBD", "%" & telefono & "%")
+                Dim adaptador As New MySqlDataAdapter(comando)
+                Dim tabla As New DataTable()
+                adaptador.Fill(tabla)
+                Return tabla
+            Catch ex As Exception
+                MsgBox("ERROR:" & ex.Message)
+            Finally
+                cerrarconexion()
+            End Try
+        End If
+
+    End Function
 End Class

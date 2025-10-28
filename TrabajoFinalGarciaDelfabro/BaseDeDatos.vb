@@ -4,10 +4,14 @@ Public Class BaseDeDatos
     Public comando As MySqlCommand
 
     Public Function abrirconexion()
-        conexion.Open()
+        If conexion.State = ConnectionState.Closed Then
+            conexion.Open()
+        End If
     End Function
     Public Function cerrarconexion()
-        conexion.Close()
+        If conexion.State = ConnectionState.Open Then
+            conexion.Close()
+        End If
     End Function
 
 End Class

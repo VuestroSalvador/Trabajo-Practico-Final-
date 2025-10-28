@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\producto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\producto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\basededatos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\basededatos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\formclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\formclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\formproductos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\formproductos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\formclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\formclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\formclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\formclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\formproductos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\formproductos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\formproductos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\formproductos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\producto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\producto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\basededatos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|solutionrelative:trabajofinalgarciadelfabro\\basededatos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE06A545-E6F4-4309-8C54-5A88942F8999}|TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj|c:\\users\\salvador\\source\\repos\\trabajo-practico-final-\\trabajofinalgarciadelfabro\\formventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -54,17 +58,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Clientes.vb",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\Clientes.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\Clientes.vb",
               "ToolTip": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\Clientes.vb",
               "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\Clientes.vb",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAMwBwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-24T05:49:32.941Z",
               "IsPinned": true,
@@ -72,13 +76,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "producto.vb",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\producto.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\producto.vb",
               "ToolTip": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\producto.vb",
               "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\producto.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAwKMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-24T00:33:10.043Z",
               "IsPinned": true,
@@ -86,13 +90,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "BaseDeDatos.vb",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\BaseDeDatos.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\BaseDeDatos.vb",
               "ToolTip": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\BaseDeDatos.vb",
               "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\BaseDeDatos.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-27T05:00:43.626Z",
               "IsPinned": true,
@@ -100,19 +104,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "FormClientes.vb",
+              "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\FormClientes.vb",
+              "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\FormClientes.vb",
+              "ToolTip": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\FormClientes.vb",
+              "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\FormClientes.vb",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwFAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-28T18:34:57.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FormProductos.vb",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\FormProductos.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\FormProductos.vb",
               "ToolTip": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\FormProductos.vb",
               "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\FormProductos.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-24T18:08:24.378Z"
+              "WhenOpened": "2025-10-24T18:08:24.378Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FormVentas.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\FormVentas.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\FormVentas.vb",
@@ -124,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "FormProductos.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\FormProductos.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\FormProductos.vb",
@@ -148,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "VentasItems.vb",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\VentasItems.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\VentasItems.vb",
@@ -160,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Ventas.vb",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\Ventas.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\Ventas.vb",
@@ -172,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\Form1.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\Form1.vb",
@@ -180,11 +198,12 @@
               "RelativeToolTip": "TrabajoFinalGarciaDelfabro\\Form1.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-24T00:24:43.997Z"
+              "WhenOpened": "2025-10-24T00:24:43.997Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Form1.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\Form1.vb",
               "RelativeDocumentMoniker": "TrabajoFinalGarciaDelfabro\\Form1.vb",

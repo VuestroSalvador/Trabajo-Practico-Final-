@@ -29,7 +29,7 @@ Partial Class Form1
         ' 
         ' BtnFormClientes
         ' 
-        BtnFormClientes.Location = New Point(117, 343)
+        BtnFormClientes.Location = New Point(87, 343)
         BtnFormClientes.Name = "BtnFormClientes"
         BtnFormClientes.Size = New Size(143, 76)
         BtnFormClientes.TabIndex = 0
