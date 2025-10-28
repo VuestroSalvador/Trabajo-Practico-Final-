@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj": {}
   },
   "projects": {
@@ -12,13 +13,22 @@
         "projectPath": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj",
         "packagesPath": "C:\\Users\\Salvador\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\obj\\",
+=======
+    "C:\\Users\\PC-1\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj": {}
+  },
+  "projects": {
+    "C:\\Users\\PC-1\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC-1\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj",
+        "projectName": "TrabajoFinalGarciaDelfabro",
+        "projectPath": "C:\\Users\\PC-1\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj",
+        "packagesPath": "C:\\Users\\PC-1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC-1\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\obj\\",
+>>>>>>> 8138afcb0b99cb990252be7051bacacfb5261d14
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Salvador\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PC-1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,8 +54,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -53,7 +62,7 @@
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
-              "version": "[9.5.0, )"
+              "version": "[8.0.33, )"
             }
           },
           "imports": [
@@ -75,7 +84,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
