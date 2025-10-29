@@ -2,7 +2,7 @@
 
 Public Class FormProductos
 
-    Dim conexion As New MySqlConnection("server=localhost;port=3000;user id=root;password=;database=ventas_tpfinal")
+    Dim conexion As New MySqlConnection("server=localhost;port=3306;user id=root;password=;database=ventas_tpfinal")
     Dim comando As MySqlCommand
     Private Sub FormProductos_load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim producto1 As New producto(0, "a", 1, "a")

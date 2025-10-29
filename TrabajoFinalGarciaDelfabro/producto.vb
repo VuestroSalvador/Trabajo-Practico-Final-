@@ -10,16 +10,12 @@ Public Class producto
             Return _precio
         End Get
         Set(value As Integer)
-            If value <> "" And value <> "  " Then
-                If (value > 0) Then
-                    _precio = value
-                Else
-                    Throw New ArgumentException("El precio debe ser un número mayor a 0.")
-                End If
-            Else
-                Throw New ArgumentException("El precio no puede estar vacio")
-            End If
 
+            If (value > 0) Then
+                _precio = value
+            Else
+                Throw New ArgumentException("El precio debe ser un número mayor a 0.")
+            End If
         End Set
     End Property
     Public Property nombre As String
