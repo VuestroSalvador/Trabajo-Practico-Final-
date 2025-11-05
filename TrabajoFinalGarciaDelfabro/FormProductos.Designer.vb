@@ -83,7 +83,7 @@ Partial Class FormProductos
         DtGrdViewPRODUCTOS.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DtGrdViewPRODUCTOS.Location = New Point(345, 12)
         DtGrdViewPRODUCTOS.Name = "DtGrdViewPRODUCTOS"
-        DtGrdViewPRODUCTOS.Size = New Size(443, 426)
+        DtGrdViewPRODUCTOS.Size = New Size(534, 452)
         DtGrdViewPRODUCTOS.TabIndex = 3
         ' 
         ' Label1
@@ -192,27 +192,27 @@ Partial Class FormProductos
         ' 
         ' BtnVolverDesdeProductos
         ' 
-        BtnVolverDesdeProductos.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        BtnVolverDesdeProductos.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         BtnVolverDesdeProductos.Location = New Point(31, 416)
         BtnVolverDesdeProductos.Name = "BtnVolverDesdeProductos"
-        BtnVolverDesdeProductos.Size = New Size(49, 29)
+        BtnVolverDesdeProductos.Size = New Size(68, 48)
         BtnVolverDesdeProductos.TabIndex = 17
         BtnVolverDesdeProductos.Text = "🏡"
-        BtnVolverDesdeProductos.TextAlign = ContentAlignment.TopCenter
         BtnVolverDesdeProductos.UseVisualStyleBackColor = True
         ' 
         ' BtnVolvverDesdeProducto
         ' 
-        BtnVolvverDesdeProducto.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        BtnVolvverDesdeProducto.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         BtnVolvverDesdeProducto.Location = New Point(13, 416)
         BtnVolvverDesdeProducto.Name = "BtnVolvverDesdeProducto"
-        BtnVolvverDesdeProducto.Size = New Size(21, 29)
+        BtnVolvverDesdeProducto.Size = New Size(21, 48)
         BtnVolvverDesdeProducto.TabIndex = 18
         BtnVolvverDesdeProducto.Text = "<-"
         BtnVolvverDesdeProducto.UseVisualStyleBackColor = True
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.White
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label3)
@@ -229,6 +229,7 @@ Partial Class FormProductos
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.BackColor = Color.White
         GroupBox2.Controls.Add(BtnEliminarProducto)
         GroupBox2.Controls.Add(Label4)
         GroupBox2.Controls.Add(TxtBxIdProducto)
@@ -241,6 +242,7 @@ Partial Class FormProductos
         ' 
         ' GroupBox3
         ' 
+        GroupBox3.BackColor = Color.White
         GroupBox3.Controls.Add(BtnModificarProducto)
         GroupBox3.Location = New Point(12, 241)
         GroupBox3.Name = "GroupBox3"
@@ -251,6 +253,7 @@ Partial Class FormProductos
         ' 
         ' GroupBox4
         ' 
+        GroupBox4.BackColor = Color.White
         GroupBox4.Controls.Add(TxtBxBuscarProducto)
         GroupBox4.Controls.Add(BtnBuscarProducto)
         GroupBox4.Controls.Add(ComBoxFiltrosProductos)
@@ -266,7 +269,8 @@ Partial Class FormProductos
         ' 
         AutoScaleDimensions = New SizeF(8F, 19F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        BackColor = Color.Maroon
+        ClientSize = New Size(884, 476)
         Controls.Add(GroupBox4)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)

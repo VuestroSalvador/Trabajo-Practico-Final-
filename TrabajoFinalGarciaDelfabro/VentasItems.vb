@@ -33,7 +33,7 @@ Public Class VentasItems
             Return _preciototal
         End Get
         Set(value As Integer)
-            If (value = (Preciounitario * cantidad)) Then
+            If (value >= 0) Then
                 _preciototal = value
             Else
                 Throw New ArgumentException("El precio total debe ser igual al precio unitario por la cantidad de Unidades")
@@ -82,11 +82,12 @@ Public Class VentasItems
         Try
             abrirconexion()
             Dim consulta As String = "SELECT * FROM ventasitems WHERE ID_Ventas=@idventas"
-            comando = New MySqlCommand(consulta, conexion)
-            comando.Parameters.AddWithValue("@idventas", id)
-            comando.ExecuteNonQuery()
+            Dim adaptador As New MySqlDataAdapter(consulta, conexion)
+            adaptador.SelectCommand.Parameters.AddWithValue("@idventas", id)
+            Dim tabla As New DataTable()
+            adaptador.Fill(tabla)
+            Return tabla
             MsgBox("Items de venta cargados con éxito.")
-            cargaritems()
         Catch ex As Exception
             Throw New ArgumentException("Error al cargar los items de venta: " & ex.Message)
         Finally
@@ -112,6 +113,22 @@ Public Class VentasItems
         Finally
             cerrarconexion()
 
+        End Try
+    End Function
+
+    Public Function preciounitarioactual(idproducto)
+        Try
+            abrirconexion()
+            Dim consulta As String = "SELECT Precio FROM productos WHERE ID_Producto=@idproducto"
+            comando = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@idproducto", idproducto)
+            Dim resultado As Object = comando.ExecuteScalar()
+            Dim preciounitario = Convert.ToInt32(resultado)
+            Return preciounitario
+        Catch ex As Exception
+            MsgBox("error al obtener el precio unitario: " & ex.Message)
+        Finally
+            cerrarconexion()
         End Try
     End Function
 

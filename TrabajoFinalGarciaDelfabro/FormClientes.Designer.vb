@@ -53,6 +53,7 @@ Partial Class FormClientes
         ' 
         ' GroupBox4
         ' 
+        GroupBox4.BackColor = Color.White
         GroupBox4.Controls.Add(TxtBxBuscarCliente)
         GroupBox4.Controls.Add(BtnBuscarCliente)
         GroupBox4.Controls.Add(CmBoxFiltroCliente)
@@ -102,6 +103,7 @@ Partial Class FormClientes
         ' 
         ' GroupBox3
         ' 
+        GroupBox3.BackColor = Color.White
         GroupBox3.Controls.Add(BtnModificarCliente)
         GroupBox3.Location = New Point(31, 258)
         GroupBox3.Name = "GroupBox3"
@@ -121,6 +123,7 @@ Partial Class FormClientes
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.BackColor = Color.White
         GroupBox2.Controls.Add(BtnEliminarCliente)
         GroupBox2.Controls.Add(Label4)
         GroupBox2.Controls.Add(TxtBxIdCliente)
@@ -159,6 +162,7 @@ Partial Class FormClientes
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.White
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label3)
@@ -235,23 +239,22 @@ Partial Class FormClientes
         ' 
         ' BtnVolvverDesdeClientes
         ' 
-        BtnVolvverDesdeClientes.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        BtnVolvverDesdeClientes.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         BtnVolvverDesdeClientes.Location = New Point(32, 433)
         BtnVolvverDesdeClientes.Name = "BtnVolvverDesdeClientes"
-        BtnVolvverDesdeClientes.Size = New Size(21, 29)
+        BtnVolvverDesdeClientes.Size = New Size(21, 45)
         BtnVolvverDesdeClientes.TabIndex = 25
         BtnVolvverDesdeClientes.Text = "<-"
         BtnVolvverDesdeClientes.UseVisualStyleBackColor = True
         ' 
         ' BtnVolverDesdeClientes
         ' 
-        BtnVolverDesdeClientes.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        BtnVolverDesdeClientes.Location = New Point(50, 433)
+        BtnVolverDesdeClientes.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        BtnVolverDesdeClientes.Location = New Point(46, 433)
         BtnVolverDesdeClientes.Name = "BtnVolverDesdeClientes"
-        BtnVolverDesdeClientes.Size = New Size(49, 29)
+        BtnVolverDesdeClientes.Size = New Size(68, 45)
         BtnVolverDesdeClientes.TabIndex = 24
         BtnVolverDesdeClientes.Text = "🏡"
-        BtnVolverDesdeClientes.TextAlign = ContentAlignment.TopCenter
         BtnVolverDesdeClientes.UseVisualStyleBackColor = True
         ' 
         ' DtGrdViewCLIENTES
@@ -259,14 +262,15 @@ Partial Class FormClientes
         DtGrdViewCLIENTES.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DtGrdViewCLIENTES.Location = New Point(364, 29)
         DtGrdViewCLIENTES.Name = "DtGrdViewCLIENTES"
-        DtGrdViewCLIENTES.Size = New Size(443, 426)
+        DtGrdViewCLIENTES.Size = New Size(577, 449)
         DtGrdViewCLIENTES.TabIndex = 23
         ' 
         ' FormClientes
         ' 
         AutoScaleDimensions = New SizeF(8F, 19F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(838, 490)
+        BackColor = Color.Maroon
+        ClientSize = New Size(953, 483)
         Controls.Add(GroupBox4)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)

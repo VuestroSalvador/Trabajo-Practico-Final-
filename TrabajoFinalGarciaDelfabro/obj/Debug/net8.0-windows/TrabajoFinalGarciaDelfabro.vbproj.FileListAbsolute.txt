@@ -66,3 +66,5 @@ C:\Users\PC-1\Source\Repos\Trabajo-Practico-Final-\TrabajoFinalGarciaDelfabro\ob
 C:\Users\PC-1\Source\Repos\Trabajo-Practico-Final-\TrabajoFinalGarciaDelfabro\obj\Debug\net8.0-windows\ref\TrabajoFinalGarciaDelfabro.dll
 C:\Users\PC-1\source\repos\Trabajo-Practico-Final-\TrabajoFinalGarciaDelfabro\bin\Debug\net8.0-windows\BouncyCastle.Crypto.dll
 C:\Users\Salvador\Source\Repos\Trabajo-Practico-Final-\TrabajoFinalGarciaDelfabro\bin\Debug\net8.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Salvador\source\repos\Trabajo-Practico-Final-\TrabajoFinalGarciaDelfabro\obj\Debug\net8.0-windows\TrabajoFinalGarciaDelfabro.ManipulacionVentas.resources
+C:\Users\Salvador\source\repos\Trabajo-Practico-Final-\TrabajoFinalGarciaDelfabro\obj\Debug\net8.0-windows\TrabajoFinalGarciaDelfabro.Resources.resources

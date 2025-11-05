@@ -25,7 +25,7 @@ Public Class Ventas
             Return _total
         End Get
         Set(value As Integer)
-            If (value > 0) Then
+            If (value >= 0) Then
                 _total = value
             Else
                 Throw New ArgumentException("El total no puede ser negativo.")
@@ -48,6 +48,7 @@ Public Class Ventas
         Me.fecha = fecha
         Me.total = total
     End Sub
+
 
     Public Function cargar()
         Try
@@ -99,5 +100,42 @@ Public Class Ventas
             cerrarconexion()
         End Try
     End Function
+
+    Public Function IDactualdeventa()
+        Try
+            abrirconexion()
+            Dim consulta As String = "SELECT MAX(ID_Ventas) AS ID_Ventas FROM ventas"
+            comando = New MySqlCommand(consulta, conexion)
+            Dim resultado As Object = comando.ExecuteScalar()
+            Dim idactual As Integer
+            If IsDBNull(resultado) Then
+                idactual = 1
+            Else
+                idactual = Convert.ToInt32(resultado) + 1
+            End If
+            Return idactual
+        Catch ex As Exception
+            MsgBox("Error al obtener el ID de la venta actual: " & ex.Message)
+        Finally
+            cerrarconexion()
+        End Try
+    End Function
+
+    Public Function finalizarventa(idventaactual, total)
+        Try
+            abrirconexion()
+            Dim consulta As String = "UPDATE ventas SET Total=@total WHERE ID_Ventas=@idventas"
+            comando = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@idventas", idventaactual)
+            comando.Parameters.AddWithValue("@total", total)
+            comando.ExecuteNonQuery()
+            MsgBox("Venta Finalizada")
+        Catch ex As Exception
+            Throw New ArgumentException("Error al finalizar la venta: " & ex.Message)
+        Finally
+            cerrarconexion()
+        End Try
+    End Function
+
 
 End Class

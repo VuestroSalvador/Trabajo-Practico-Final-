@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Salvador\\Source\\Repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj": {}
+    "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Salvador\\Source\\Repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj": {
+    "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Salvador\\Source\\Repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj",
+        "projectUniqueName": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj",
         "projectName": "TrabajoFinalGarciaDelfabro",
-        "projectPath": "C:\\Users\\Salvador\\Source\\Repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj",
+        "projectPath": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\TrabajoFinalGarciaDelfabro.vbproj",
         "packagesPath": "C:\\Users\\Salvador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Salvador\\Source\\Repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\obj\\",
+        "outputPath": "C:\\Users\\Salvador\\source\\repos\\Trabajo-Practico-Final-\\TrabajoFinalGarciaDelfabro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

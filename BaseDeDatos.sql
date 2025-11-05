@@ -37,15 +37,10 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `Precio` int(11) NOT NULL,
   `Categoria` varchar(50) NOT NULL,
   PRIMARY KEY (`ID_Producto`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla ventas_tpfinal.productos: ~4 rows (aproximadamente)
+-- Volcando datos para la tabla ventas_tpfinal.productos: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` (`ID_Producto`, `Nombre`, `Precio`, `Categoria`) VALUES
-	(1, 'guitarra', 500, 'musica'),
-	(5, 'pelota', 200, 'deportes'),
-	(13, 'piano', 10000, 'musica'),
-	(14, 'bajo', 2000, 'musica');
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 
 -- Volcando estructura para tabla ventas_tpfinal.ventas
