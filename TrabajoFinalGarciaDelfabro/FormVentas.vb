@@ -15,6 +15,8 @@
             ventas1.registrar(idventas, idcliente, fecha, total)
             GrpBxProductos.Enabled = True
             GrpBxIniciarVenta.Enabled = False
+            Button1.Enabled = False
+            cargarproductoscombobx()
         Catch ex As Exception
             Throw New ArgumentException("Error al registrar la venta: " & ex.Message)
         End Try
@@ -78,5 +80,42 @@
         Form1.Show()
     End Sub
 
+    Private Sub cargarclientescombobx()
+        Dim cliente1 As New Clientes()
+        Dim tabla As DataTable = cliente1.seleccionarnombre()
 
+        If tabla IsNot Nothing Then
+            ComBxClientes.DataSource = tabla
+            ComBxClientes.DisplayMember = "Cliente"
+            ComBxClientes.ValueMember = "ID_Clientes"
+            ComBxClientes.SelectedIndex = -1
+        End If
+    End Sub
+
+    Private Sub FormVentas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cargarclientescombobx()
+    End Sub
+
+    Private Sub mostraridCLIENTEentxtbx(sender As Object, e As EventArgs) Handles ComBxClientes.SelectedIndexChanged
+        If ComBxClientes.SelectedIndex <> -1 Then
+            TxtBxIdClienteVenta.Text = ComBxClientes.SelectedValue.ToString()
+        End If
+    End Sub
+
+    Private Sub cargarproductoscombobx()
+        Dim producto1 As New producto()
+        Dim tabla As DataTable = producto1.seleccionarproductoscombox()
+        If tabla IsNot Nothing Then
+            ComBxProductos.DataSource = tabla
+            ComBxProductos.DisplayMember = "Nombre"
+            ComBxProductos.ValueMember = "ID_Producto"
+            ComBxProductos.SelectedIndex = -1
+        End If
+    End Sub
+
+    Private Sub mostraridPRODUCTOentxtbx(sender As Object, e As EventArgs) Handles ComBxProductos.SelectedIndexChanged
+        If ComBxProductos.SelectedIndex <> -1 Then
+            TxtBxIdProductoVENTA.Text = ComBxProductos.SelectedValue.ToString()
+        End If
+    End Sub
 End Class

@@ -54,6 +54,9 @@ Public Class producto
         Me.precio = precio
         Me.categoria = categoria
     End Sub
+    Public Sub New()
+
+    End Sub
 
     Public Function cargarproductos()
         Try
@@ -157,6 +160,22 @@ Public Class producto
             End Try
         End If
 
+    End Function
+
+    Public Function seleccionarproductoscombox()
+        Try
+            abrirconexion()
+            Dim consulta As String = "SELECT ID_Producto, Nombre FROM productos"
+            comando = New MySqlCommand(consulta, conexion)
+            Dim adaptador As New MySqlDataAdapter(comando)
+            Dim tabla As New DataTable()
+            adaptador.Fill(tabla)
+            Return tabla
+        Catch ex As Exception
+            MsgBox("Error al obtener productos" & ex.Message)
+        Finally
+            cerrarconexion()
+        End Try
     End Function
 
 End Class

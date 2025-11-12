@@ -29,6 +29,8 @@ Partial Class FormVentas
         TxtBxFechaVenta = New TextBox()
         BtnIniciarVenta = New Button()
         GrpBxIniciarVenta = New GroupBox()
+        ComBxClientes = New ComboBox()
+        Label5 = New Label()
         GrpBxProductos = New GroupBox()
         BtnAñadirProducto = New Button()
         TxtBxCantidadVENTA = New TextBox()
@@ -43,6 +45,8 @@ Partial Class FormVentas
         Button1 = New Button()
         GrpBxFinalizarVenta = New GroupBox()
         GroupBox4 = New GroupBox()
+        Label6 = New Label()
+        ComBxProductos = New ComboBox()
         CType(DtGrdVwVentasItems, ComponentModel.ISupportInitialize).BeginInit()
         GrpBxIniciarVenta.SuspendLayout()
         GrpBxProductos.SuspendLayout()
@@ -63,7 +67,7 @@ Partial Class FormVentas
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(49, 27)
+        Label1.Location = New Point(49, 46)
         Label1.Name = "Label1"
         Label1.Size = New Size(106, 30)
         Label1.TabIndex = 8
@@ -73,7 +77,7 @@ Partial Class FormVentas
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(49, 68)
+        Label2.Location = New Point(49, 78)
         Label2.Name = "Label2"
         Label2.Size = New Size(68, 30)
         Label2.TabIndex = 9
@@ -81,14 +85,15 @@ Partial Class FormVentas
         ' 
         ' TxtBxIdClienteVenta
         ' 
-        TxtBxIdClienteVenta.Location = New Point(167, 33)
+        TxtBxIdClienteVenta.Enabled = False
+        TxtBxIdClienteVenta.Location = New Point(167, 52)
         TxtBxIdClienteVenta.Name = "TxtBxIdClienteVenta"
         TxtBxIdClienteVenta.Size = New Size(235, 26)
         TxtBxIdClienteVenta.TabIndex = 10
         ' 
         ' TxtBxFechaVenta
         ' 
-        TxtBxFechaVenta.Location = New Point(167, 74)
+        TxtBxFechaVenta.Location = New Point(167, 84)
         TxtBxFechaVenta.Name = "TxtBxFechaVenta"
         TxtBxFechaVenta.Size = New Size(235, 26)
         TxtBxFechaVenta.TabIndex = 11
@@ -105,6 +110,8 @@ Partial Class FormVentas
         ' GrpBxIniciarVenta
         ' 
         GrpBxIniciarVenta.BackColor = Color.White
+        GrpBxIniciarVenta.Controls.Add(ComBxClientes)
+        GrpBxIniciarVenta.Controls.Add(Label5)
         GrpBxIniciarVenta.Controls.Add(TxtBxFechaVenta)
         GrpBxIniciarVenta.Controls.Add(BtnIniciarVenta)
         GrpBxIniciarVenta.Controls.Add(Label1)
@@ -116,9 +123,29 @@ Partial Class FormVentas
         GrpBxIniciarVenta.TabIndex = 13
         GrpBxIniciarVenta.TabStop = False
         ' 
+        ' ComBxClientes
+        ' 
+        ComBxClientes.FormattingEnabled = True
+        ComBxClientes.Location = New Point(167, 19)
+        ComBxClientes.Name = "ComBxClientes"
+        ComBxClientes.Size = New Size(235, 27)
+        ComBxClientes.TabIndex = 14
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(50, 16)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(97, 30)
+        Label5.TabIndex = 13
+        Label5.Text = "Nombre "
+        ' 
         ' GrpBxProductos
         ' 
         GrpBxProductos.BackColor = Color.White
+        GrpBxProductos.Controls.Add(ComBxProductos)
+        GrpBxProductos.Controls.Add(Label6)
         GrpBxProductos.Controls.Add(BtnAñadirProducto)
         GrpBxProductos.Controls.Add(TxtBxCantidadVENTA)
         GrpBxProductos.Controls.Add(Label4)
@@ -134,7 +161,7 @@ Partial Class FormVentas
         ' 
         ' BtnAñadirProducto
         ' 
-        BtnAñadirProducto.Location = New Point(49, 116)
+        BtnAñadirProducto.Location = New Point(49, 135)
         BtnAñadirProducto.Name = "BtnAñadirProducto"
         BtnAñadirProducto.Size = New Size(353, 29)
         BtnAñadirProducto.TabIndex = 13
@@ -143,7 +170,7 @@ Partial Class FormVentas
         ' 
         ' TxtBxCantidadVENTA
         ' 
-        TxtBxCantidadVENTA.Location = New Point(180, 72)
+        TxtBxCantidadVENTA.Location = New Point(180, 91)
         TxtBxCantidadVENTA.Name = "TxtBxCantidadVENTA"
         TxtBxCantidadVENTA.Size = New Size(222, 26)
         TxtBxCantidadVENTA.TabIndex = 17
@@ -152,7 +179,7 @@ Partial Class FormVentas
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(49, 72)
+        Label4.Location = New Point(49, 91)
         Label4.Name = "Label4"
         Label4.Size = New Size(99, 30)
         Label4.TabIndex = 14
@@ -160,7 +187,8 @@ Partial Class FormVentas
         ' 
         ' TxtBxIdProductoVENTA
         ' 
-        TxtBxIdProductoVENTA.Location = New Point(180, 40)
+        TxtBxIdProductoVENTA.Enabled = False
+        TxtBxIdProductoVENTA.Location = New Point(180, 59)
         TxtBxIdProductoVENTA.Name = "TxtBxIdProductoVENTA"
         TxtBxIdProductoVENTA.Size = New Size(222, 26)
         TxtBxIdProductoVENTA.TabIndex = 13
@@ -169,7 +197,7 @@ Partial Class FormVentas
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(49, 40)
+        Label3.Location = New Point(49, 59)
         Label3.Name = "Label3"
         Label3.Size = New Size(125, 30)
         Label3.TabIndex = 13
@@ -254,6 +282,24 @@ Partial Class FormVentas
         GroupBox4.TabIndex = 26
         GroupBox4.TabStop = False
         ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(50, 22)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(125, 30)
+        Label6.TabIndex = 18
+        Label6.Text = "ID Producto"
+        ' 
+        ' ComBxProductos
+        ' 
+        ComBxProductos.FormattingEnabled = True
+        ComBxProductos.Location = New Point(180, 25)
+        ComBxProductos.Name = "ComBxProductos"
+        ComBxProductos.Size = New Size(222, 27)
+        ComBxProductos.TabIndex = 19
+        ' 
         ' FormVentas
         ' 
         AutoScaleDimensions = New SizeF(8F, 19F)
@@ -300,4 +346,8 @@ Partial Class FormVentas
     Friend WithEvents Button1 As Button
     Friend WithEvents GrpBxFinalizarVenta As GroupBox
     Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents ComBxClientes As ComboBox
+    Friend WithEvents ComBxProductos As ComboBox
+    Friend WithEvents Label6 As Label
 End Class

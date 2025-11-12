@@ -56,6 +56,9 @@ Public Class Clientes
         Me.correo = correo
     End Sub
 
+    Public Sub New()
+
+    End Sub
     Public Function cargar()
         Try
             abrirconexion()
@@ -116,7 +119,7 @@ Public Class Clientes
             comando.Parameters.AddWithValue("@telefono", telefono)
             comando.Parameters.AddWithValue("@correo", correo)
             comando.ExecuteNonQuery()
-            MsgBox("Producto Modificado")
+            MsgBox("Cliente Modificado")
 
         Catch ex As Exception
             MsgBox("ERROR:" & ex.Message)
@@ -175,5 +178,21 @@ Public Class Clientes
             End Try
         End If
 
+    End Function
+
+    Public Function seleccionarnombre()
+        Try
+            abrirconexion()
+            Dim consulta As String = "SELECT ID_Clientes, Cliente FROM clientes"
+            comando = New MySqlCommand(consulta, conexion)
+            Dim adaptador As New MySqlDataAdapter(comando)
+            Dim tabla As New DataTable()
+            adaptador.Fill(tabla)
+            Return tabla
+        Catch ex As Exception
+            MsgBox("Error al obtener Clientes:" & ex.Message)
+        Finally
+            cerrarconexion()
+        End Try
     End Function
 End Class
